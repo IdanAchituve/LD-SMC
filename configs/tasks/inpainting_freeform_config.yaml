@@ -1,0 +1,16 @@
+conditioning:
+  main_sampler: LD-SMC
+
+data:
+  name: ffhq
+  root: ./data/samples/
+
+measurement:
+  operator:
+    name: inpainting
+  mask_opt:
+    mask_type: free_form
+
+  noise:
+    name: gaussian
+    sigma: 0.01
